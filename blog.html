@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        /* gruop selector */
+        h1,h2{
+            text-align: center;
+            color:rgb(255,165,0,0.7);
+            text-transform: uppercase;
+        }
+        decentent selecter
+        #post article p{
+            color: #444;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+        body{
+            background-color: rgb(248, 240, 240);
+            background-image: url();
+            font-family: Arial, sans-serif;
+        }
+        header{
+            background-color:white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 2rem;
+        }
+        .nav a{
+            text-decoration: none;
+            color:rgb(255,165,0,0.7);
+            font-weight: bold;
+            margin: 0 10px;
+            
+        }
+        nav a:hover{
+            color: brown;
+        }
+        #about p{
+            text-transform: capitalize;
+            font-size: 10px;
+            font-style: italic;
+            font-weight: 500;
+        }
+        footer{
+        
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(40, 38, 38);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Lalit's Blog</h1>
+        <p>Sharing thoughts on nothing</p>
+        <nav class="nav">
+            <a href="#">Home</a>|
+            <a href="#">About</a>|
+            <a href="#">BlogPosts</a>|
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="about">
+        <h1>About me</h1>
+        <p>My name is Lalit Agnihotri I am a web developer and a student of B.Tech in Computer Science and Engineering. I love to write blogs on various topics related to web development, programming, and technology.</p>
+        <img src="" alt="prifile picture">
+    </div>
+    
+    <hr>
+    <h1>Latest Blog Post</h1>
+    <h2>My Journey into Web Development</h2>
+    <p>Web development is a fascinating field that combines creativity and technical skills. My journey began with learning HTML and CSS, which laid the foundation for my understanding of web design. As I progressed, I delved into JavaScript, which opened up new possibilities for interactivity and dynamic content on websites.</p>
+    <h3>Key Tools I Use</h3>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>Git & GitHub</li>
+    </ul>
+    <h3>Tips for Beginners in Programing</h3>
+    <p>For those starting their journey in programming, my advice is to stay curious and persistent. Practice regularly, build small projects, and don't be afraid to make mistakes. The more you code, the more you'll learn and improve your skills.</p>
+    <h3>Languages to Start with</h3>
+    <hr>
+    <h1>Upcoming Traning Schedule </h1>
+    <table border="1">
+        <tr>
+            <th>Course</th>
+            <th>Start Date</th>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td>Web Development Bootcamp</td>
+            <td>July 1, 2024</td>
+            <td>12 weeks</td>
+        </tr>
+        <tr>
+            <td>JavaScript Essentials</td>
+            <td>August 15, 2024</td>
+            <td>8 weeks</td>
+        </tr>
+        <tr>
+            <td>React.js Advanced Concepts</td>
+            <td>September 10, 2024</td>
+            <td>10 weeks</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Contact Me</h1>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <footer>
+        <p>&copy; 2024 Lalit Agnihotri. All rights reserved.</p>    
+    </footer>
+</body>
+</html>

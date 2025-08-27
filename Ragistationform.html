@@ -4,41 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RegistationForm</title>
+    <style>
+        .container{
+            background-color: rgb(228, 234, 239);
+            text-align: center;
+        }
+        .p{
+            margin-right: 47rem;
+            font-family:'Times New Roman', Times, serif;
+            font-size: large;
+        }
+        .name{
+            padding: 1rem 1rem;
+        }
+        .inputN{
+            width: 60%;
+            height: 2rem;
+            background-color: white;
+            border-radius: 1rem;
+        }
+        .gender{
+            padding: 1rem 1rem;
+           
+        }
+        .genN{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20rem ;
+            margin-right: 20rem;
+        }
+        .gen{
+          font-size: medium;
+          justify-content: start;
+        }
+        .country{
+            padding: 1rem 1rem;
+        }
+        .p1{
+            font-family:'Times New Roman', Times, serif;
+            font-size: large;
+            margin-right: 50rem;
+        }
+    </style>
 </head>
 <body>
-    <form action="#">
-        <p>Enter your name</p>
-        <input type="text" placeholder="enter your name">
-        <p>Enter your age</p>
-        <input type="number" placeholder="enter your age">
-        <p>Select your gender</p>
-        <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html">male</label><br>
-        <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html">female</label><br>
-        <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html">others</label><br>
-        <P></P>
-        <label for="contry">Country</label><br>
-        <select id="contry" name="country" required>
-            <option value="India">India</option>
-            <option value="USA">USA</option>
-            <option value="UK">UK</option>
+    <div class="container">
+        <form action="#">
+          <div class="name">
+            <p class="p">Enter your name</p>
+            <input type="text" placeholder="enter your name" class="inputN">
+            <p class="p">Enter your age</p>
+            <input type="number" placeholder="enter your age" class="inputN">
+          </div>
 
-        </select><br>
-        <P></P>
-        <input type="checkbox" id="skill" name="skill" value="HTML">
-        <label for="skill1">HTML</label><br>
-         <input type="checkbox" id="skill" name="skill" value="CSS">
-        <label for="skill2">CSS</label><br>
-        <input type="checkbox" id="skill" name="skill" value="JS">
-        <label for="skill3">JS</label><br>
+          <div class="gender">
+                <p class="p">Select your gender</p>
+                <div class="genN">
+                    <input type="radio" id="html" name="fav_language" value="HTML" >
+                    <label for="html" class="gen">male</label><br>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html" class="gen">female</label><br>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html" class="gen">others</label><br>
+                </div>
+          </div>
+            
+            <div class="country">
+                <label for="contry" class="p1">Country</label><br>
+                <select id="contry" name="country" required>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
 
+                </select>
+            </div>
+            <P></P>
+            <input type="checkbox" id="skill" name="skill" value="HTML">
+            <label for="skill1">HTML</label><br>
+             <input type="checkbox" id="skill" name="skill" value="CSS">
+            <label for="skill2">CSS</label><br>
+            <input type="checkbox" id="skill" name="skill" value="JS">
+            <label for="skill3">JS</label><br>
 
-     
-        
-        <p>uplod your resumme</p>
-        <input type="file" placeholder="uplod here">
-    </form>
+            <p>uplod your resumme</p>
+            <input type="file" placeholder="uplod here">
+        </form>
+    </div>
 </body>
 </html>

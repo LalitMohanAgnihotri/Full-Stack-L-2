@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restrurent Menu</title>
+    <style>
+        body{
+            background-color:white;
+            font-family: Arial, sans-serif;
+            margin-left: 10rem;
+        }
+        .header{
+            background-color: rgb(255,165,0,0.7);
+            padding: 30px;
+            text-align: center;
+            border-radius: 1rem;
+        }
+        .sidebar{
+            background-color: rgb(236, 227, 223);
+            padding: 20px;
+            width: 100px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            border-radius: 1rem;
+
+        }
+        .nav{
+            display: flex;
+            flex-direction: column;
+            align-items: space-between;
+            text-align: space-between;
+            margin-top: 20px;
+        }
+        .nav a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin: 10px 0;
+        }
+        .content{
+            padding: 20px;
+        }
+        .continer{
+            height: 470px;
+            background-color: rgb(248, 240, 240);
+            padding: 20px;
+            border-radius: 1rem;
+            text-align: center;
+        }
+        .card{
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            display: inline-block;
+            width: 350px;
+        
+        }
+        .i{
+            border-radius: 1rem;
+        }
+        .footer{
+            background-color: rgb(40, 38, 38);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-radius: 1rem;
+            margin-top: 20px;
+        }
+        .btn{
+            margin-top: 20px;
+        }
+        .b1{
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            border:solid black;
+            background-color:black;
+            color: white;
+        }
+        .b2{
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            border:solid black;
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">The Lalit Dhaba</h1>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <nav class="nav">
+            <a class="a" href="#">Home</a>
+            <a class="a" href="#">Starters</a>
+            <a class="a" href="#">Main Course</a>
+            <a class="a" href="#">Desserts</a>
+            <a class="a" href="#">Contact</a>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="continer">
+            <h1>Our Specials</h1>
+            <div class="card">
+                <img src="./images/cornpizza.jpg" class="i" width="300" height="200">
+                <h2>Conre Pizza</h2>
+                <p>crispy conre pizza topped with fresh veggies and cheese</p>
+            </div>
+            <div class="card">
+                <img src="./images/panner.jpg" class="i" width="300" height="200">
+                <h2>Panner Butter Masala</h2>
+                <p>creamy and rich panner butter masala with aromatic spices</p>
+            </div>
+           <div class="card">
+            <img src="./images/viryani.jpg" class="i" width="300" height="200">
+            <h2>Veg Biryani</h2>
+            <p>fragrant basmati rice cooked with mixed vegetables and spices</p>
+           </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 The Lalit Dhaba| All rights reserved.</p>
+    </footer>
+    <div class="btn">
+        <button href="#" class="b1">Dark theem</button>
+        <button href="#" class="b2">Light theem</button>
+    </div>
+</body>
+</html> 
